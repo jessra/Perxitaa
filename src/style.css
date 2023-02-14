@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+body {
+  background-color: #3C1464;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container-inicio {
+  background: url("../img/perxitaa.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+  justify-content: right;
+}
+.header {
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 5rem;
+  transition: 0.6s;
+}
+.sticky {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  margin-top: 1rem;
+} 
+.header div {
+  width: 50%;
+}
+.logo img{
+  width: 40%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+.opciones {
+  margin-top: .4rem;
+  margin-bottom: .5rem;
+  margin-right: 1rem;
+  text-align: right;
+}
+.opciones .op {
+  display: none;
+}
+.opciones a {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: .8rem;
+  transition: all 1s ease;
+}
+.opciones a:hover {
+  color: #FDB702;
+  font-size: 1rem;
+}
+.opciones button {
+  background: none;
+  border-radius: 5rem;
+  border-color: #3C1464;
+  padding: .5rem 0 .5rem 1rem;
+  text-align: center;
+  color: #3C1464;
+  cursor: pointer;
+}
+.opciones button:hover {
+  background-color: #3C1464;
+  color: white;
+}
+.container-social {
+  width: 100%;
+  justify-content: center;
+}
+.social {
+  background-color: #4E306B;
+  color: white;
+  border-radius: 30rem;
+  justify-content: center;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: -4rem;
+  padding: 1rem;
+}
+.social div {
+  margin: .5rem;
+  text-align: center;
+}
+.promocion {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.text-left p{
+  font-size: 1.8rem;
+  font-style: italic;
+}
+.libro img {
+  width: 70%;
+}
+.text-right {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+.pedir {
+  background-color: #FDB702;
+  border: none;
+  border-radius: 50rem;
+  padding: .5rem 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.pedir:hover {
+  background-color: #F30B35;
+  transition: all 1s ease;
+}
+.container-perxitaa {
+  background: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.descripcion {
+  padding: 1rem;
+}
+.text-perxitaa {
+  background-color: #3C1464;
+  padding: 1rem;
+}
+.text-perxitaa h2 {
+  color: #FDB702;
+  text-align: center;
+  font-size: 2rem;
+}
+.text-perxitaa p {
+  color: white;
+  text-align: justify;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.img-perxitaa {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.img-perxitaa img{
+  width: 90%;
+  border-bottom: 1rem white solid;
+  border-right: 1rem white solid;
+  transform: translateX(130%);
+}
+.visible-in img{
+  transition: .9s ease-in-out;
+  transform: translateX(0);
+}
+.container-personajes {
+  margin: 2rem;
+  text-align: center;
+}
+.container-personajes h2, .merch h2 {
+  color: #FDB702;
+}
+.personajes {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.horacio {
+  background-image: url("../img/Hope.jpg");
+}
+.carlo {
+  background-image: url("../img/CarGam.jpg");
+}
+.cubito {
+  background-image: url("../img/Cubito.jpg");
+}
+.horacio, .carlo, .cubito {
+  background-size: cover;
+  height: 11rem;
+  border-radius: 60rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.text-hope, .text-cargam, .text-cubito {
+  background-color: rgba(37, 24, 46, 0.9);
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 60rem;
+}
+.personajes h2 {
+  padding-top: 2rem;
+}
+.horacio:hover .text-hope, .carlo:hover .text-cargam,
+.cubito:hover .text-cubito {
+  opacity: 1;
+}
+.container-productos {
+  background: url("../img/Minecraft.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+.titulo-pro {
+  color: #FDB702;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.merch {
+  background-color: white;  
+  border-radius: 10rem;
+  padding-bottom: 3rem;
+}
+.producto {
+  max-width: 80%;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  transition: padding 2s ease-out;
+}
+.des-pro {
+  margin: 1rem;
+  text-align: center;
+}
+.merch h4, .merch h3 {
+  margin: 1rem;
+  text-align: left;
+}
+.merch p {
+  text-align: left;
+}
+.flechas {
+  position: absolute;
+  justify-content: space-between;
+  width: 90%;
+  display: flex;
+  margin-top: 100%;
+  cursor: pointer;
+}
+.container-suscripcion {
+  padding: 1rem;
+}
+.img-for {
+  padding: 1rem;
+}
+.img-for img {
+  width: 100%;
+}
+.formulario {
+  margin-top: 1.5rem;
+}
+.beneficios {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.beneficios div {
+  padding: .5rem;
+}
+.formulario h3 {
+  color: #FDB702;
+  font-size: 2rem;
+  text-align: center;
+}
+.formulario h5 {
+  font-size: 1.5rem;
+  color: white;
+}
+.formulario p {
+  color: white;
+  padding: .3rem;
+  font-size: 1.1rem
+}
+.form {
+  justify-content: center;
+}
+.form, .form-correo {
+  display: flex;
+  position: relative;
+}
+.form input {
+  color: white;
+  padding-top: 1.8rem;
+  border: none;
+  background: none;
+  border-bottom: .1rem white solid;
+  outline: none;
+  margin-top: .3rem;
+  font-size: .8rem;
+}
+.label {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem; 
+}
+.form input:focus {
+  border-bottom: .1rem #FDB702 solid;
+}
+.footer {
+  background-color: #fdb602c0;
+  padding: 1rem;
+  text-align: center;
+}
+.politica {
+  border-top: .1rem black solid;
+  padding-top: 2rem;
+}
+.politica a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.politica a:hover {
+  color: #3C1464;
+}
+.redes i {
+  padding: 1rem .5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 550px) {
+  .header {
+    margin: 0 3rem 3rem 3rem;
+  }
+  .sticky {
+    width: 92%;
+    margin-top: 2rem;
+  }
+  .opciones .op {
+    display: initial;
+  }
+  .logo img{
+    width: 25%;
+    margin-left: 5rem;
+    margin-top: .5rem;
+  }
+  .opciones {
+    margin-top: .6rem;
+    margin-right: 5rem;
+  }
+  .social {
+    display: flex;
+    position: relative;
+    width: 60%;
+  }
+  .social div {
+    width: 20%;
+  }
+  .promocion {
+    display: flex;
+    position: relative;
+  }
+  .promocion div {
+    width: 50%;
+  }
+  .text-left p{
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  .text-right {
+    margin-top: 3rem;
+    margin-right: 2rem;
+  }
+  .descripcion {
+    display: flex;
+    position: relative;
+  }
+  .text-perxitaa {
+    width: 50%;
+    margin: 1rem;
+    padding: 2rem 10rem 2rem 2rem;
+  }
+  .img-perxitaa {
+    margin-left: -8rem;
+    width: 50%;
+  }
+  .personajes {
+    display: flex;
+    position: relative;
+  }
+  .horacio, .carlo, .cubito {
+    width: 20%;
+    margin-right: 2rem;
+    margin-top: 0;
+  }
+  .merch {
+    display: flex;
+    position: relative;
+  }
+  .img-pro{
+    width: 40%;
+  }
+  .des-pro{
+    width: 50%;
+  }
+  .flechas {
+    width: 97%;
+    margin-top: 25%;
+  }
+  .merch {
+    padding-bottom: 1rem;
+  }
+  .merch h2 {
+    text-align: left;
+  }
+  .merch p {
+    margin-right: 2.5rem;
+  }
+  .landing {
+    display: flex;
+    position: relative;
+  }
+  .img-for {
+    width: 30%;
+  }
+  .formulario {
+    width: 70%;
+  }
+  .politica  {
+    margin-bottom: 2rem;
+  }
+  .politica a {
+    margin-right: 1rem;
+    display: initial;
+  }
+}
+@media screen and (min-width: 900px) {
+  .opciones a {
+    font-size: 1rem;
+  }
+  .logo img{
+    width: 15%;
+  }
+  .flechas {
+    margin-top: 20%;
+    width: 100%;
+  }
+  .container-productos {
+    padding: 3rem 5rem 5rem 5rem;
+  }
+  .opciones a:hover {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .container-inicio {
+    padding-bottom: 20rem;
+  }
+  .text-left p{
+    margin: 8rem 0 5rem 5rem;
+  }
+  .text-right {
+    margin: 8rem 5rem 2rem 0;
+  }
+  .descripcion {
+    padding: 5rem;
+  }
+  .text-perxitaa p, .merch p,
+  .merch h4, .merch h3, .formulario p {
+    font-size: 1.5rem;
+  }
+  .personajes p {
+    font-size: 1.2rem;
+  }
+  .merch h2, .formulario h5 {
+    font-size: 1.9rem;
+  }
+  .formulario h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .form input {
+    font-size: 1.5rem;
+  }
+}

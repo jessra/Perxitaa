@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">  
+  <link rel="stylesheet" href="src/icon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/perxitaa-icon.png">
+  <title>Perxitaa</title>
+</head>
+<body>
+  <section id="inicio" class="container-inicio">
+    <header class="header">
+      <div class="logo">
+        <img src="img/perx.png" alt="">
+      </div>
+      <div class="opciones">
+        <a class="op" href="#inicio">INICIO</a>
+        <a class="op" href="#perxitaa">PERXITAA</a>
+        <a class="op"href="#productos">PRODUCTOS</a>
+        <button>
+          <a href="#suscribirse">
+            SUSCRÍBETE
+          </a>
+        </button>
+      </div>
+    </header>
+  </section>
+  <section class="container-social">
+    <div class="social">
+      <div class="twitch">
+        <i class="twitch-icon"></i>
+        <h2 id="twitch-con">0</h2>
+      </div>
+      <div class="twitter">
+        <i class="twitter-icon"></i>
+        <h2 id="twitter-con">0</h2>
+      </div>
+      <div class="instagram">
+        <i class="instagram-icon"></i>
+        <h2 id="instagram-con">0</h2>
+      </div>
+      <div class="youtube">
+        <i class="youtube-icon"></i>
+        <h2 id="youtube-con">0</h2>
+      </div>
+    </div>
+    <div class="promocion">
+      <div class="text-left">
+        <p>La guía imprescindible para aprender a hacer roleplay de la mano del mayor 
+          experto: <strong>Perxitaa.</strong> </p>
+      </div>
+      <div class="libro">
+        <img src="img/el-mundo-del-roleplay-con-perxitaa.png" alt="">
+      </div>
+      <div class="text-right">
+        <p>La expreriencia definitiva para rolear en juegos como GTA, Minecraft, Rust o
+          similares</p>
+        <button id="perxitaa" class="pedir">
+          Pedir ahora
+          <i class="compra-icon"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="container-perxitaa">
+    <div class="descripcion">
+      <div class="text-perxitaa">
+        <h2>Perxitaa</h2>
+        <p>Jaume Cremades, alias Perxitaa, es streamer, influencer, youtuber, gamer, y lleva 
+          desde 2012 jugando a videojuegos y entreteniendo al público. El boom de su 
+          canal comenzó hace ya unos cuantos años con Minecraft, pero el cambio total en su vida 
+          llegó con la serie de SpainRP de GTA Roleplay, junto a AuronPlay. Gracias a ella llegó 
+          a ser considerado como uno de los mayores ejemplos de roleadores en español. Lleva 
+          prácticamente dos años en SpainRP roleando sin parar todos los días en su canal de Twitch, 
+          donde crea historias y genera contenido para mantenerse en el top 10 de habla hispana de 
+          streamers de la plataforma, con dos millones de seguidores, número que también supera en YouTube.</p>
+      </div>
+      <div id="img-sm" class="img-perxitaa">
+        <img src="img/grand_theft_auto_v-5571079.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="container-personajes">
+    <h2>Personajes emblemáticos</h2>
+    <div class="personajes">
+      <div class="horacio">
+        <div class="text-hope">
+          <h2>Horacio Perez</h2>
+          <p>Personaje creado para la serie de SpainRP y que luego llevaría a Infames, servidor de roleplay donde 
+            es fundador.</p>
+        </div>
+      </div>
+      <div class="carlo">
+        <div class="text-cargam">
+          <h2>Carlo Gambino</h2>
+          <p>Personaje creado para la serie de Marbella Vice y que luego transladaría a Infames.</p>
+        </div>
+      </div>
+      <div class="cubito">
+        <div class="text-cubito">
+          <h2>Perxitaa cubito</h2>
+          <p id="productos">Skin con la que juega Minecraft, juego donde ha realizado varias series y competencias</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-productos">
+    <h2 class="titulo-pro">Productos disponibles</h2>
+    <div class="merch">
+      <div class="flechas">
+        <i onclick="pro('iz')" class="iz"></i>
+        <i onclick="pro('der')" class="der"></i>
+      </div>
+      <div class="img-pro">
+        <img id="producto" class="producto" src="img/sudaderaheroe.png" alt="">
+      </div>
+      <div class="des-pro">
+        <h2 id="h2">Sudadera negra "HÉROE"</h2>
+        <h4>Descripción:</h4>
+        <p id="des">Sudadera con capucha bicolor doble tejido, con cordón ajustable, cubrecosturas en el cuello y bolsillo 
+          canguro. Con elástico en puños y cintura. La capucha interior y los cordones son en color gris. La sudadera 
+          está impresa en la parte trasera y en el brazo izquierdo.</p>
+        <h4>Composición:</h4>
+        <p id="com">50% algodón / 50% poliéster, felpa perchada, 280 g/m²</p>
+        <h3 id="pre">€28,92</h3>
+        <button id="suscribirse" class="pedir">
+          Pedir ahora
+          <i class="compra-icon"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="container-suscripcion">
+    <div class="landing">
+      <div class="img-for">
+        <img src="img/perxitaa-icon.png" alt="">
+      </div>
+      <div class="formulario">
+        <h3>¡Registrate para tener actualizaciones de Perxitaa!</h3>
+        <div class="beneficios">
+          <div class="Redes">
+            <h5>Redes</h5>
+            <p>Tweets nuevos</p>
+            <p>Imágenes</p>
+            <p>Menciones</p>
+          </div>
+          <div class="Eventos">
+            <h5>Eventos</h5>
+            <p>Sorteoss</p>
+            <p>Eventos especiales</p>
+            <p>Encuentros</p>
+          </div>
+          <div class="contenido">
+            <h5>Contenido</h5>
+            <p>Aviso de directo</p>
+            <p>Videos nuevos</p>
+            <p>Participaciones</p>
+          </div>
+        </div>
+        <form id="suscripcion" class="form">
+          <div class="form-correo">
+            <label class="label" for="correo">
+              <span class="correo-text">Correo</span>
+            </label>
+            <input id="correo" type="email" name="correo" required>
+          </div>
+          <div class="boton">
+            <button class="pedir">
+              Suscribirse
+              <i class="campana-icon"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="politica">
+      <a href="">Política de envío</a>
+      <a href="">Política de devoluciones</a>
+      <a href="">Política de cookies</a>
+      <a href="">Guía de prendas</a>
+      <a href="">Política de privacidad</a>
+      <a href="">Sorteos</a>
+    </div>
+    <div class="redes">
+      <h4>Sigueme en</h4>
+      <i class="twitch-footer"></i>
+      <i class="twitter-footer"></i>
+      <i class="instagram-footer"></i>
+      <i class="youtube-footer"></i>
+    </div>
+    <strong>Copyright © 2022</strong>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="config.js"></script>
+</html>
